@@ -1,0 +1,11 @@
+<div>
+    {{#each posts}}
+    <article class="card">
+        <div class="card-header">
+            <h2><a href="/post/{{id}}">{{title}}</a></h2>
+            <div>Posted by {{User.username}} on {{createdAt}} </div>
+        </div>
+        <div class="card-body">{{body}}</div>
+    </article>
+    {{/each}}
+</div>

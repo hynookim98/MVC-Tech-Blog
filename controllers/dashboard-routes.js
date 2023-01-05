@@ -8,7 +8,7 @@ router.get('/', auth, async (req, res) => {
 
         const posts = postData.map((data) => data.get({plain: true}));
 
-        res.render('all-posts-admin' {
+        res.render('all-posts-admin', {
             layout: 'dashboard',
             posts,
         });
